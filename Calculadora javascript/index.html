@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="app.js"></script>
+    <title>Calculadora Javascript</title>
+</head>
+<body>
+    <div class="container">
+        <h1>CALCULADORA</h1>
+        <form name="calcu">
+            <div>
+                <input type="text" id="visor" maxlength="33" readonly/>
+            </div>
+            
+         <div>
+                <div>
+                    <input type="button" class="botao" value="1" onclick="preencher(1);"/>
+                    <input type="button" class="botao" value="2" onclick="preencher(2);"/>
+                    <input type="button" class="botao" value="3" onclick="preencher(3);"/>
+                    <input type="button" class="botao" value="4" onclick="preencher(4);"/>
+                    <input type="button" class="botao" value="0" onclick="preencher(0);"/>
+                    <input type="button" class="botao" id="operador" value="+" onclick="preencher('+');"/>
+                    <input type="button" class="botao" id="operador" value="*" onclick="preencher('*');"/>
+                    <input type="button" class="botao" id="operador" value="-" onclick="preencher('-');"/>
+                
+           
+            <div>
+                
+                <input type="button" class="botao" value="=" onclick="calculo(value);"/>
+                <input type="button" class="botao" value="C" onclick="clear();"/>       
+                <input type="button" class="botao" id="operador" value="/" onclick="preencher('/');"/>
+                
+            </div>
+        </form>
+    </div> 
+</body>
+</html>
